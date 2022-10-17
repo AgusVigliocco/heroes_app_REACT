@@ -2,21 +2,14 @@ import { useMemo } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { getHeroesById } from './../helpers'
 import { Error404 } from './Error404'
+import { ButtonBack } from './../components/ButtonBack';
+
 import "./Styles.css"
 
 export const HeroePage = () => {
 
     const { id } = useParams()
     const heroe = useMemo(() => getHeroesById(id), [id])
-    const navigate = useNavigate()
-
-
-
-    const onNavigateBack = () => {
-        navigate(-1, {
-            replace: true
-        })
-    }
 
     if (!heroe) {
         return <Error404 />
@@ -46,42 +39,9 @@ export const HeroePage = () => {
                 <p>{heroe.characters}</p>
 
                 <div className="d-flex justify-content-evenly">
-                    <section id="intro">
 
-                        <div id="intro-content" class="center-content">
+                    <ButtonBack />
 
-                            <div className="center-content-inner">
-
-                                <div className="content-section content-section-margin">
-
-                                    <div className="content-section-grid clearfix">
-
-                                        <a onClick={onNavigateBack} href="#" className="button nav-link">
-
-                                            <div className="bottom"></div>
-
-                                            <div className="top">
-
-                                                <div className="label">Go Back</div>
-
-                                                <div className="button-border button-border-left"></div>
-                                                <div className="button-border button-border-top"></div>
-                                                <div className="button-border button-border-right"></div>
-                                                <div className="button-border button-border-bottom"></div>
-
-                                            </div>
-
-                                        </a>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </section>
                 </div>
 
             </div>
