@@ -104,16 +104,11 @@ b span {
   opacity: 0.4;
 }
 
-#intro {
-  width: 200px;
-  margin: 100px auto 0;
-}
-
 .button {
   display: inline-block;
   text-decoration: none;
   position: relative;
-  margin-top: 40px;
+  margin-top: 15px;
 }
 
 .button .bottom {

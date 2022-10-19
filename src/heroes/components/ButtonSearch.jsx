@@ -1,22 +1,10 @@
 
-import { useNavigate, useParams } from 'react-router-dom';
-import "./HeroeCard.css"
 
-export const ButtonBack = () => {
-
-    const { id } = useParams()
-
-    const navigate = useNavigate()
-
-
-
-    const onNavigateBack = () => {
-        navigate('/', {
-            replace: true
-        })
-    }
+export const ButtonSearch = () => {
 
     return (
+
+
         <section id="intro">
 
             <div id="intro-content" className="center-content">
@@ -25,15 +13,15 @@ export const ButtonBack = () => {
 
                     <div className="content-section content-section-margin">
 
-                        <div className="content-section-grid clearfix">
+                        <div className="content-section-grid clearfix d-flex justify-content-end">
 
-                            <a onClick={onNavigateBack} href="#" className="button nav-link">
+                            <button type="submit" href="#" className="button nav-link">
 
                                 <div className="bottom"></div>
 
                                 <div className="top">
 
-                                    <div className="label">Go Home</div>
+                                    <div className="label">Search</div>
 
                                     <div className="button-border button-border-left"></div>
                                     <div className="button-border button-border-top"></div>
@@ -42,7 +30,7 @@ export const ButtonBack = () => {
 
                                 </div>
 
-                            </a>
+                            </button>
 
                         </div>
 

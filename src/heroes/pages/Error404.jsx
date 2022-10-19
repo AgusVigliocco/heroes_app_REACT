@@ -18,9 +18,6 @@ export const Error404 = () => {
             <div className='col-6'>
                 <img className='img-fluid animate__animated animate__fadeInRight' src={`../../../assets/heroes/SpidermanError404.png`} />
             </div>
-
-
-
         </div >
     )
 }
