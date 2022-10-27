@@ -18,9 +18,9 @@ export const Navbar = () => {
 
             <Link
                 className="navbar-brand mx-3"
-                to="/"
+                to="/home"
             >
-                Asociaciones
+                Home
             </Link>
 
             <div className="navbar-collapse">

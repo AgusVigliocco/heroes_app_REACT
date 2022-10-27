@@ -11,7 +11,7 @@ export const ButtonBack = () => {
 
 
     const onNavigateBack = () => {
-        navigate('/', {
+        navigate('/home', {
             replace: true
         })
     }
