@@ -17,8 +17,8 @@ export const Navbar = () => {
         <nav className="navbar navbar-expand-sm navbar-dark bg-dark p-2 ">
 
             <Link
-                className="navbar-brand mx-3"
-                to="/home"
+                className="navbar-brand fs-4"
+                to="/"
             >
                 Home
             </Link>

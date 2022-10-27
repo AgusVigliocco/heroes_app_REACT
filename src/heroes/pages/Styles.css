@@ -6,4 +6,9 @@
 
 .img-asociaciones {
   width: 100vh;
+  transition: all 0.5s;
+}
+
+.img-asociaciones:hover {
+  filter: opacity(0.6);
 }
