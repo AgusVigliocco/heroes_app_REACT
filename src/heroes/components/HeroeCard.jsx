@@ -14,7 +14,7 @@ const HeroeCard = ({ id, superhero, publisher, alter_ego, first_appearance, char
     return (
         <Link to={`/heroe/${id}`} className="my-card">
             <div className='animate__animated animate__fadeIn'>
-                <img src={`../assets/heroes/${id}.jpg`} className="img img-responsive " alt={superhero} />
+                <img src={`../../../assets/heroes/${id}.jpg`} className="img img-responsive " alt={superhero} />
                 <div className="profile-name">{superhero}</div>
                 <div className="profile-position">{alter_ego}</div>
                 <div className="profile-overview">
@@ -35,5 +35,6 @@ const HeroeCard = ({ id, superhero, publisher, alter_ego, first_appearance, char
         </Link>
     );
 };
+
 
 export default HeroeCard;
