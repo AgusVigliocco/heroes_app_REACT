@@ -4,7 +4,7 @@ export const MarvelPage = () => {
     return (
         <>
             <h1>
-                MarvelPage
+                Marvel
             </h1>
             <hr />
 

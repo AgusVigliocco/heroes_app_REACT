@@ -4,7 +4,7 @@ import "./HeroeCard.css"
 
 export const ButtonBack = () => {
 
-    const { id } = useParams()
+
 
     const navigate = useNavigate()
 

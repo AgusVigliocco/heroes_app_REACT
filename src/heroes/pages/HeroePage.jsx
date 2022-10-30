@@ -24,18 +24,18 @@ export const HeroePage = () => {
             <div className="col-6 animate__animated animate__fadeInRight ">
                 <h3>{heroe.superhero}</h3>
                 <ul className='list-group list-group-flush'>
-                    <li className='list-group-item'>
+                    <li className='list-group-item bg-dark'>
                         <strong> Alter ego: </strong> {heroe.alter_ego}
                     </li>
-                    <li className='list-group-item'>
+                    <li className='list-group-item bg-dark'>
                         <strong> Publisher: </strong> {heroe.publisher}
                     </li>
-                    <li className='list-group-item'>
+                    <li className='list-group-item bg-dark'>
                         <strong> Firts Appearance: </strong>{heroe.first_appearance}
                     </li>
                 </ul>
 
-                <h5 className='mt-3'>Characters: </h5>
+                <h5 className='mt-3 '>Characters: </h5>
                 <p>{heroe.characters}</p>
 
                 <div className="d-flex justify-content-evenly">

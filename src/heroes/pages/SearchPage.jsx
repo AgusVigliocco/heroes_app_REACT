@@ -30,7 +30,7 @@ export const SearchPage = () => {
     return (
 
         <>
-            <h1>SearchPage</h1>
+            <h1>Search</h1>
             <hr />
 
             <div className="column">
@@ -38,7 +38,7 @@ export const SearchPage = () => {
                     <form
                         onSubmit={onSearchSubmit}>
                         <input
-                            className='form-control'
+                            className='form-control bg-dark'
                             type="text"
                             name="searchText"
                             placeholder='Search a hero'
